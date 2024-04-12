@@ -1,0 +1,11 @@
+{
+  " name": "Nokia 3310",
+  "description": "Indestructible cellphone",
+  " brand": "Nokia",
+  "imageUrl": "https://example.com/331@.jpg",
+  "price": 99,
+  "_id": "5d318e1a8541744830bef139",
+  "userld": "6385f782597b9d001545386b",
+  "createdAt": "2019-07-19T09:32:10.535Z",
+  "updatedAt": "2019-07-19T09:32:10.535Z"
+}
