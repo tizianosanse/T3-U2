@@ -35,6 +35,10 @@ window.addEventListener("DOMContentLoaded", () => {
       const buy = document.createElement("button");
       buy.classList.add("btn", "btn-dark");
       buy.innerText = "buy now";
+      const returnHomePage = document.createElement("a");
+      returnHomePage.innerText = "Return";
+      returnHomePage.classList.add("btn", "btn-primary", "mt-2");
+      returnHomePage.setAttribute("href", "/home.html");
 
       figure.appendChild(img);
       col.appendChild(figure);
@@ -44,5 +48,6 @@ window.addEventListener("DOMContentLoaded", () => {
       content.appendChild(brand);
       content.appendChild(price);
       content.appendChild(buy);
+      content.appendChild(returnHomePage);
     });
 });

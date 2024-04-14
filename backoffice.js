@@ -10,6 +10,13 @@ window.onload = () => {
   const form = document.getElementById("form");
   form.addEventListener("submit", createProducts);
   if (id) {
+    const remove = document.createElement("button");
+    remove.innerText = "delete";
+    remove.classList.add("btn", "btn-danger");
+    remove.setAttribute("type", "button");
+    remove.addEventListener("click", deleteProduct);
+    form.appendChild(remove);
+
     const save = document.getElementById("create");
     save.innerText = "Save";
     save.classList.add("btn-success");
@@ -68,4 +75,13 @@ const createProducts = (event) => {
       alert("prodotto con id :" + productsObj._id + "creato");
     });
   event.target.reset();
+};
+const deleteProduct = () => {
+  fetch(URL, {
+    method: "DELETE",
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: "Bearer" + " " + token,
+    },
+  });
 };
