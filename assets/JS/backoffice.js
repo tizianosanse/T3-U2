@@ -83,5 +83,13 @@ const deleteProduct = () => {
       "Content-Type": "application/json",
       Authorization: "Bearer" + " " + token,
     },
-  });
+  })
+    .then((resp) => {
+      if (resp.ok) {
+        return resp.json();
+      }
+    })
+    .then((productsObj) => {
+      alert("prodotto con id :" + productsObj._id + "eliminato");
+    });
 };
