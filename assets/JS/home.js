@@ -60,9 +60,9 @@ const fetchProducts = () => {
         card.innerHTML = `
            <img src=${product.imageUrl} class="card-img-top" alt="...">
                   <div id='card-body' class="card-body">
-                      <p class="card-text "> ${product.name}</p>
-                      <p class= 'card-text'> ${product.description}
-                      <p class= 'card-text '> ${product.brand}
+                      <p class="card-text name"> ${product.name}</p>
+                      <p class= 'card-text '> ${product.description}
+                      <p class= 'card-text brand'> ${product.brand}
                      
                       <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill  ${
                         product.price !== 0 ? "bg-primary" : "bg-success"

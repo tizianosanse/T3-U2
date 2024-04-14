@@ -1,0 +1,8 @@
+.row {
+  padding: 2%;
+  box-shadow: 14px 15px 14px -3px rgba(0, 0, 0, 0.31);
+  -webkit-box-shadow: 14px 15px 14px -3px rgba(0, 0, 0, 0.31);
+  -moz-box-shadow: 14px 15px 14px -3px rgba(0, 0, 0, 0.31);
+  border-top: 0.5px solid rgba(219, 212, 212, 0.288);
+  border-left: 0.5px solid rgba(219, 212, 212, 0.253);
+}
